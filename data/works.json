@@ -1,0 +1,727 @@
+{
+  "siteConfig": {
+    "brandName": "TIANYUC DESIGN",
+    "designerName": "陈天宇",
+    "brandTagline": "摄影 · 品牌视觉 · 商业空间与电商全案设计",
+    "heroTitle": "商业视觉与平面设计",
+    "heroSubtitle": "提供品牌标志、活动海报、电商详情与室内文化墙设计",
+    "wechat": "z2728588294",
+    "location": "中国 · 商业视觉与品牌设计工作室",
+    "availability": "档期开放 · 承接品牌全案 / 电商视觉 / 商业平面与空间落地"
+  },
+  "categories": [
+    {
+      "id": "brand",
+      "num": "01",
+      "name": "品牌识别 & VI",
+      "en": "BRAND IDENTITY & VI",
+      "desc": "涵盖品牌标志创意、定制字体与全套视觉规范，以统一的设计语言建立高辨识度品牌形象。",
+      "deliverables": [
+        "品牌 Logo",
+        "VI 视觉手册",
+        "字体与配色",
+        "实景样机提案"
+      ],
+      "ctaText": "查看精选作品 →",
+      "craftStandards": [
+        "AI / CDR / EPS 标准矢量源文件（全文字转曲与网格制图规范）",
+        "标准色 CMYK / RGB / Pantone 专色色值对照表",
+        "特种纸名片、信封、画册等烫金 / 击凸 / 压纹印前工艺规范",
+        "高定 3D 实景材质样机效果图提案"
+      ],
+      "formats": "AI · CDR · EPS · PDF · PNG"
+    },
+    {
+      "id": "poster",
+      "num": "02",
+      "name": "商业海报 & 视觉物料",
+      "en": "KEY VISUAL & PRINT",
+      "desc": "覆盖品牌主视觉（KV）、节点营销海报及画册折页，兼顾线上社媒传播与线下印刷质感。",
+      "deliverables": [
+        "主视觉 KV",
+        "营销海报",
+        "新媒体延展",
+        "折页与画册"
+      ],
+      "ctaText": "查看精选作品 →",
+      "craftStandards": [
+        "印刷级 CMYK 300DPI 源文件（含 3mm 标准裁切出血位）",
+        "图层清晰分组的可编辑分层 PSD / AI 源文件",
+        "小红书 / 微信朋友圈 / 门店灯箱多尺寸无损延展适配",
+        "印前四色黑、叠印与字体嵌入预检核对"
+      ],
+      "formats": "PSD · AI · PDF · CMYK 300DPI"
+    },
+    {
+      "id": "culture",
+      "num": "03",
+      "name": "空间文化墙 & 展陈",
+      "en": "CULTURAL WALL & EXHIBITION",
+      "desc": "专注企业形象墙、展厅导视与主题文化墙设计，结合立体材质与空间尺度实现精准落地。",
+      "deliverables": [
+        "企业形象墙",
+        "展厅导视",
+        "材质与工艺",
+        "实景效果图"
+      ],
+      "ctaText": "查看精选作品 →",
+      "craftStandards": [
+        "1:1 或 1:10 精准施工尺寸 CDR / AI 矢量排版源文件",
+        "亚克力水晶字、PVC 雕刻、拉丝不锈钢与金属腐蚀工艺标注单",
+        "结合现场照片的 1:1 透视实景材质合成效果图",
+        "雕刻机直读闭合路径与分色图层规范"
+      ],
+      "formats": "CDR · AI · DXF · PDF"
+    },
+    {
+      "id": "ecommerce",
+      "num": "04",
+      "name": "电商视觉 & 详情页",
+      "en": "E-COMMERCE & PRODUCT",
+      "desc": "打造全平台高点击主图、产品光影精修与沉浸式详情页，用清晰卖点逻辑提升转化表现。",
+      "deliverables": [
+        "高点击主图",
+        "产品精修合成",
+        "长图详情页",
+        "多平台适配"
+      ],
+      "ctaText": "查看精选作品 →",
+      "craftStandards": [
+        "800×800 / 3:4 高点击率主图、直通车图与纯白底精修图",
+        "产品 3D 质感重塑、光影精修与高品质生活方式场景合成",
+        "790px / 750px 零缝隙切片长图详情页与可改字分层 PSD",
+        "天猫 / 淘宝 / 京东 / 抖音商城 / 小红书多端视觉规范适配"
+      ],
+      "formats": "PSD · PNG · WEBP · JPG"
+    },
+    {
+      "id": "interior",
+      "num": "05",
+      "name": "室内设计 & 空间效果",
+      "en": "INTERIOR DESIGN & SPACE",
+      "desc": "涵盖住宅与商业空间规划、三维写实效果图渲染及材质灯光氛围营造，兼顾空间美学与施工落地。",
+      "deliverables": [
+        "空间布局规划",
+        "3D 写实效果图",
+        "材质与灯光表现",
+        "CAD 施工图规范"
+      ],
+      "ctaText": "查看服务标准 →",
+      "craftStandards": [
+        "高写实 3ds Max / V-Ray / Corona 室内空间光影渲染效果图",
+        "CAD 平面布局图、立面施工图、天花灯位与节点大样图规范",
+        "主材样板（木饰面、岩板、金属、软装布艺）与色温灯光搭配清单",
+        "商业店铺、办公空间与住宅全屋定制尺度复核与落地指导"
+      ],
+      "formats": "3DS MAX · CAD · SKP · PSD · PDF"
+    },
+    {
+      "id": "packaging",
+      "num": "06",
+      "name": "包装设计 & 印前工艺",
+      "en": "PACKAGING & PRINT",
+      "desc": "涵盖礼盒结构、产品贴标与精装画册视觉，精通刀版展开与特种纸工艺，确保成品零偏差。",
+      "deliverables": [
+        "礼盒与包装",
+        "刀版结构规范",
+        "特种纸与工艺",
+        "3D 渲染样机"
+      ],
+      "ctaText": "查看精选作品 →",
+      "craftStandards": [
+        "标准包装刀版展开图、折线/裁切线与出血位精准分色图层",
+        "烫金 / 局部 UV / 击凸 / 压纹独立专色通道制作",
+        "高逼真 3D 礼盒与瓶贴多角度光影渲染样机",
+        "印前四色、专色叠印、条形码精度与低 DPI 预检报告"
+      ],
+      "formats": "AI · PDF · Pantone · 3D"
+    }
+  ],
+  "works": [
+    {
+      "id": "ecom-ipad-keyboard",
+      "title": "平板磁吸妙控键盘 · 暖阳桌面数码场景视觉",
+      "subtitle": "Tablet Magic Keyboard Warm Desk Lifestyle Visual",
+      "category": "ecommerce",
+      "featured": true,
+      "layout": "standard",
+      "client": "3C 数码配件品牌",
+      "year": "2026",
+      "specs": "数码配件种草主图 / 暖阳景深摄影与屏幕 UI 精修",
+      "tags": [
+        "高点击主图",
+        "数码配件电商",
+        "多平台适配"
+      ],
+      "description": "结合午后暖阳木质办公桌与皮革桌垫的真实生活质感，突出磁吸悬浮支架的轻薄几何角度与背光键盘细节，兼具天猫主图转化与小红书种草调性。",
+      "coverThumb": "assets/thumbs/ab4b9f006db9f931315a53bbe14f21e3.webp",
+      "coverFull": "assets/full/ab4b9f006db9f931315a53bbe14f21e3.webp",
+      "aspectRatio": 0.7059,
+      "width": 847,
+      "height": 1200,
+      "palette": [
+        "#C7B1A2",
+        "#855F43",
+        "#AF896C",
+        "#442C1C"
+      ],
+      "sourceFiles": [
+        "ab4b9f006db9f931315a53bbe14f21e3.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/ab4b9f006db9f931315a53bbe14f21e3.webp",
+          "full": "assets/full/ab4b9f006db9f931315a53bbe14f21e3.webp",
+          "aspectRatio": 0.7059,
+          "caption": "平板磁吸键盘 · 午后桌面生活场景主图"
+        }
+      ]
+    },
+    {
+      "id": "ecom-harman-speaker",
+      "title": "HARMAN KARDON 哈曼卡顿 · 水母蓝牙音箱暖阳场景主图",
+      "subtitle": "Aura Studio Transparent Speaker Warm Home Lifestyle Visual",
+      "category": "ecommerce",
+      "featured": true,
+      "layout": "standard",
+      "client": "哈曼卡顿 / 3C 声学数码",
+      "year": "2026",
+      "specs": "声学数码电商主视觉 / 烟熏玻璃折射 + 暖阳胡桃木实景合成",
+      "tags": [
+        "高点击主图",
+        "产品精修合成",
+        "3C 声学电商"
+      ],
+      "description": "以午后穿过白纱帘的柔和暖阳为环境光基调，在胡桃木餐边柜实景中精准还原烟熏玻璃穹顶通透反射、内部波纹暖光与织物音箱底座细节，打造兼具家居美学与高转化力的声学数码主图。",
+      "coverThumb": "assets/thumbs/e99927e11d2aa86aef908c41701ea0a9.webp",
+      "coverFull": "assets/full/e99927e11d2aa86aef908c41701ea0a9.webp",
+      "aspectRatio": 1.6694,
+      "width": 1000,
+      "height": 599,
+      "palette": [
+        "#DBCAB7",
+        "#E7DACA",
+        "#613F23",
+        "#BDA384"
+      ],
+      "sourceFiles": [
+        "e99927e11d2aa86aef908c41701ea0a9.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/e99927e11d2aa86aef908c41701ea0a9.webp",
+          "full": "assets/full/e99927e11d2aa86aef908c41701ea0a9.webp",
+          "aspectRatio": 1.6694,
+          "caption": "哈曼卡顿水母音箱 · 午后暖阳胡桃木实景主图"
+        }
+      ]
+    },
+    {
+      "id": "muse-skin-lab",
+      "title": "MUSE SKIN LAB · 透亮水光肌高定视觉海报",
+      "subtitle": "Glass Skin Ritual · 轻奢皮肤管理主视觉",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "MUSE SKIN LAB (Seoul)",
+      "year": "2026",
+      "specs": "2:3 竖版商业海报 / 院线灯箱 & 社媒宣发",
+      "tags": [
+        "主视觉 KV",
+        "营销海报",
+        "新媒体延展"
+      ],
+      "description": "针对高端院线级皮肤管理品牌打造的主推视觉。利用高透冰晶的焦散折射光斑与通透水光肌理形成视觉通感，搭配高对比现代衬线标题与克制的负空间留白，打破传统美业促销海报的廉价感。",
+      "coverThumb": "assets/thumbs/work-53b4b807.webp",
+      "coverFull": "assets/full/work-53b4b807.webp",
+      "aspectRatio": 0.6682,
+      "width": 802,
+      "height": 1200,
+      "palette": [
+        "#ACA1A0",
+        "#DDE4ED",
+        "#C5C2C8",
+        "#727074"
+      ],
+      "sourceFiles": [
+        "美容.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/work-53b4b807.webp",
+          "full": "assets/full/work-53b4b807.webp",
+          "aspectRatio": 0.6682,
+          "caption": "MUSE SKIN LAB · 透亮水光肌高定视觉海报"
+        }
+      ]
+    },
+    {
+      "id": "luna-nail-galaxy",
+      "title": "LUNA NAIL · 指尖星河液态银芭蕾美甲海报",
+      "subtitle": "New Collection · 暗调星芒美业商业海报",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "LUNA NAIL STUDIO",
+      "year": "2026",
+      "specs": "3:4 竖版海报 / 银箔立体字效 + 星轨光效",
+      "tags": [
+        "主视觉 KV",
+        "营销海报",
+        "新媒体延展"
+      ],
+      "description": "以深邃碳灰暗调烘托指尖液态银猫眼与丝带水晶球的高光质感，主标题采用微弧金属拉丝光泽，配合环绕星轨线条与底部高辨识度价格锚点，实现高审美与商业引流转化的平衡。",
+      "coverThumb": "assets/thumbs/luna_nail_ballet_cateye_poster_1795151017055.webp",
+      "coverFull": "assets/full/luna_nail_ballet_cateye_poster_1795151017055.webp",
+      "aspectRatio": 0.7467,
+      "width": 896,
+      "height": 1200,
+      "palette": [
+        "#352C32",
+        "#D8BDB7",
+        "#AB8D87",
+        "#665252"
+      ],
+      "sourceFiles": [
+        "luna_nail_ballet_cateye_poster_1795151017055.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/luna_nail_ballet_cateye_poster_1795151017055.webp",
+          "full": "assets/full/luna_nail_ballet_cateye_poster_1795151017055.webp",
+          "aspectRatio": 0.7467,
+          "caption": "LUNA NAIL · 指尖星河液态银芭蕾美甲海报"
+        }
+      ]
+    },
+    {
+      "id": "tianyuc-logo-seal",
+      "title": "TIANYUC · 现代构成主义印章标志",
+      "subtitle": "Constructivist Seal Monogram (TYC)",
+      "category": "brand",
+      "featured": false,
+      "layout": "standard",
+      "client": "TIANYUC DESIGN",
+      "year": "2026",
+      "specs": "1:1 品牌印记 / 45°斜切几何构成",
+      "tags": [
+        "品牌 Logo",
+        "字体与配色",
+        "实景样机提案"
+      ],
+      "description": "汲取东方方印的轮廓边界与现代构成主义的 45° 斜切分割，将 T、Y、C 融于一方几何印章之中，兼具国际现代感与东方人文气韵。",
+      "coverThumb": "assets/thumbs/grs_v9_orchestrator.webp",
+      "coverFull": "assets/full/grs_v9_orchestrator.webp",
+      "aspectRatio": 1.0,
+      "width": 1200,
+      "height": 1200,
+      "palette": [
+        "#9FA7B3",
+        "#9BA4B0",
+        "#B9BEC5",
+        "#8E9BAA"
+      ],
+      "sourceFiles": [
+        "grs_v9_orchestrator.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/grs_v9_orchestrator.webp",
+          "full": "assets/full/grs_v9_orchestrator.webp",
+          "aspectRatio": 1.0,
+          "caption": "TIANYUC · 现代构成主义印章标志"
+        }
+      ]
+    },
+    {
+      "id": "ecom-ing-earbuds",
+      "title": "ING 无线降噪耳机 · 大漠落日场景渲染海报",
+      "subtitle": "TWS Earbuds Sunset Dune Scene Rendering",
+      "category": "ecommerce",
+      "featured": false,
+      "layout": "standard",
+      "client": "ING 数码声学",
+      "year": "2026",
+      "specs": "3C 数码详情页首屏 / 珠光材质渲染 + 沙漠光影合成",
+      "tags": [
+        "产品精修合成",
+        "长图详情页",
+        "多平台适配"
+      ],
+      "description": "打破传统数码产品冷硬的工业背景，以暖金大漠沙丘与落日余晖烘托耳机充电仓的温润珠光漆面与玫瑰金声学格栅细节。",
+      "coverThumb": "assets/thumbs/e8b0200a58878d7f1a21d7cf25b846cd.webp",
+      "coverFull": "assets/full/e8b0200a58878d7f1a21d7cf25b846cd.webp",
+      "aspectRatio": 1.6667,
+      "width": 1000,
+      "height": 600,
+      "palette": [
+        "#FAE1CC",
+        "#8D5D3C",
+        "#B68A6F",
+        "#F2C8A5"
+      ],
+      "sourceFiles": [
+        "e8b0200a58878d7f1a21d7cf25b846cd.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/e8b0200a58878d7f1a21d7cf25b846cd.webp",
+          "full": "assets/full/e8b0200a58878d7f1a21d7cf25b846cd.webp",
+          "aspectRatio": 1.6667,
+          "caption": "ING 降噪耳机 · 大漠余晖视觉合成"
+        }
+      ]
+    },
+    {
+      "id": "ecom-robot-vacuum",
+      "title": "智能扫拖机器人 · 现代客厅实景合成效果图",
+      "subtitle": "Smart Robot Vacuum Living Room CGI Integration",
+      "category": "ecommerce",
+      "featured": false,
+      "layout": "standard",
+      "client": "智能家居品牌",
+      "year": "2026",
+      "specs": "家电电商详情主图 / 室内全局光照 + 清洁动态实景合成",
+      "tags": [
+        "产品精修合成",
+        "长图详情页",
+        "多平台适配"
+      ],
+      "description": "在现代侘寂风阳光客厅场景中精准匹配地面透视与环境反射，直观呈现扫拖机器人的激光导航模组、基站嵌入形态与地面清洁前后的动态对比。",
+      "coverThumb": "assets/thumbs/e66566935dcb53ce45eb94293fb634d5.webp",
+      "coverFull": "assets/full/e66566935dcb53ce45eb94293fb634d5.webp",
+      "aspectRatio": 1.7778,
+      "width": 960,
+      "height": 540,
+      "palette": [
+        "#9A856D",
+        "#BAA489",
+        "#E0D0BF",
+        "#71593C"
+      ],
+      "sourceFiles": [
+        "e66566935dcb53ce45eb94293fb634d5.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/e66566935dcb53ce45eb94293fb634d5.webp",
+          "full": "assets/full/e66566935dcb53ce45eb94293fb634d5.webp",
+          "aspectRatio": 1.7778,
+          "caption": "智能扫拖机器人 · 全屋阳光实景合成"
+        }
+      ]
+    },
+    {
+      "id": "tianyuc-brand-mockup",
+      "title": "TIANYUC · 特种纸名片与皮质画册 VI 样机",
+      "subtitle": "Luxury Stationery & Blind-Deboss Portfolio Mockup",
+      "category": "brand",
+      "featured": false,
+      "layout": "standard",
+      "client": "TIANYUC DESIGN Studio",
+      "year": "2026",
+      "specs": "特种黑卡烫哑金 / 350g 艺术棉纸 / 皮质压印画册",
+      "tags": [
+        "实景样机提案",
+        "VI 视觉手册",
+        "品牌 Logo"
+      ],
+      "description": "将环形光学快门标识与定制衬线字体落地于黑金/白金双色特种棉纸名片及皮质盲压画册封面，在自然窗影与洞石肌理衬托下呈现沉稳高定的触感质感。",
+      "coverThumb": "assets/thumbs/tianyuc_luxury_brand_mockup_1794992011866.webp",
+      "coverFull": "assets/full/tianyuc_luxury_brand_mockup_1794992011866.webp",
+      "aspectRatio": 1.4906,
+      "width": 1200,
+      "height": 805,
+      "palette": [
+        "#E4E1D7",
+        "#292824",
+        "#5E564B",
+        "#C6BAA7"
+      ],
+      "sourceFiles": [
+        "tianyuc_luxury_brand_mockup_1794992011866.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/tianyuc_luxury_brand_mockup_1794992011866.webp",
+          "full": "assets/full/tianyuc_luxury_brand_mockup_1794992011866.webp",
+          "aspectRatio": 1.4906,
+          "caption": "TIANYUC · 特种纸名片与皮质画册 VI 样机"
+        }
+      ]
+    },
+    {
+      "id": "school-party-culture-wall",
+      "title": "为党育人 为国育才 · 校园党建文化墙展板",
+      "subtitle": "“四有”好老师主题空间文化展陈设计",
+      "category": "culture",
+      "featured": false,
+      "layout": "standard",
+      "client": "教育院校 / 党建文化空间",
+      "year": "2026",
+      "specs": "4:3 巨幅墙面展陈 / 沉稳故宫红 + 拉丝香槟金立体字",
+      "tags": [
+        "企业形象墙",
+        "材质与工艺",
+        "实景效果图"
+      ],
+      "description": "摒弃传统展板生硬拼凑的色块，采用沉稳故宫红与深绛红双层分区，主标题『为党育人 为国育才』以拉丝香槟金亚克力立体字呈现，辅以中式回纹窗格与四联立体卷轴，兼具庄重感与空间施工落地性。",
+      "coverThumb": "assets/thumbs/school_board_v2_flat.webp",
+      "coverFull": "assets/full/school_board_v2_flat.webp",
+      "aspectRatio": 1.3393,
+      "width": 1200,
+      "height": 896,
+      "palette": [
+        "#891F1B",
+        "#5A1315",
+        "#AD7361",
+        "#7B1414"
+      ],
+      "sourceFiles": [
+        "school_board_v2_flat.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/school_board_v2_flat.webp",
+          "full": "assets/full/school_board_v2_flat.webp",
+          "aspectRatio": 1.3393,
+          "caption": "为党育人 为国育才 · 校园党建文化墙展板"
+        }
+      ]
+    },
+    {
+      "id": "packaging-huashidi-tableware",
+      "title": "HUASHIDI 华诗迪 · 陶瓷餐具套装礼盒刀版包装",
+      "subtitle": "Ceramic Tableware Minimalist Folding Carton & Die-line",
+      "category": "packaging",
+      "featured": true,
+      "layout": "standard",
+      "client": "HUASHIDI 华诗迪陶瓷（广东汕头）",
+      "year": "2026",
+      "specs": "卡纸礼盒结构刀版展开图 / 极简线稿插画 + 单黑精印",
+      "tags": [
+        "礼盒与包装",
+        "刀版结构规范",
+        "特种纸与工艺"
+      ],
+      "description": "以『让日常变为仪式感』为核心视觉调性，采用极简留白与高雅单色印刷规范。正面呈现经典衬线 HSD 徽标与品牌字标，侧面与背面融合精细器型线稿插画、清晰规格信息框及食品接触/环保回收标识，兼顾货架高级感与刀版压痕模切落地精度。",
+      "coverThumb": "assets/thumbs/work-4b7df0bc.webp",
+      "coverFull": "assets/full/work-4b7df0bc.webp",
+      "aspectRatio": 1.3932,
+      "width": 1200,
+      "height": 861,
+      "palette": [
+        "#FBFCF6",
+        "#F7F8F3",
+        "#FFFFFF",
+        "#DDDED9"
+      ],
+      "sourceFiles": [
+        "华诗迪陶瓷餐具包装_预览图.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/work-4b7df0bc.webp",
+          "full": "assets/full/work-4b7df0bc.webp",
+          "aspectRatio": 1.3932,
+          "caption": "华诗迪陶瓷餐具包装 · 完整结构刀版展开预览图"
+        }
+      ]
+    },
+    {
+      "id": "luna-nail-glassy",
+      "title": "LUNA NAIL · 指尖微光冰透玻璃珠猫眼海报",
+      "subtitle": "Glassy Cat-Eye · 春夏新色上市宣发",
+      "category": "poster",
+      "featured": false,
+      "layout": "standard",
+      "client": "LUNA NAIL STUDIO",
+      "year": "2026",
+      "specs": "3:4 竖版海报 / 奶油暖调 + 冰晶水波纹台面",
+      "tags": [
+        "营销海报",
+        "新媒体延展",
+        "折页与画册"
+      ],
+      "description": "采用温润奶油米灰调与冰透亚克力水波纹砖作为视觉底座，突出玻璃珠猫眼的清透光泽；底部采用磨砂玻璃信息栏清晰梳理新客体验价与三大核心服务卖点。",
+      "coverThumb": "assets/thumbs/01_nail_cat_eye_poster_1795150634736.webp",
+      "coverFull": "assets/full/01_nail_cat_eye_poster_1795150634736.webp",
+      "aspectRatio": 0.7467,
+      "width": 896,
+      "height": 1200,
+      "palette": [
+        "#DFD3CA",
+        "#F3EFE8",
+        "#E9E1D9",
+        "#B59E92"
+      ],
+      "sourceFiles": [
+        "01_nail_cat_eye_poster_1795150634736.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/01_nail_cat_eye_poster_1795150634736.webp",
+          "full": "assets/full/01_nail_cat_eye_poster_1795150634736.webp",
+          "aspectRatio": 0.7467,
+          "caption": "LUNA NAIL · 指尖微光冰透玻璃珠猫眼海报"
+        }
+      ]
+    },
+    {
+      "id": "study-method-infographic",
+      "title": "高效学习五关进阶闭环 · 视觉导图海报",
+      "subtitle": "Educational Infographic & Social Media Visual",
+      "category": "poster",
+      "featured": false,
+      "layout": "standard",
+      "client": "教育科普 / 新媒体视觉专栏",
+      "year": "2026",
+      "specs": "3:4 信息图表海报 / 路径式闯关信息架构",
+      "tags": [
+        "新媒体延展",
+        "主视觉 KV",
+        "折页与画册"
+      ],
+      "description": "将枯燥的方法论转化为『S型五关进阶闯关地图』，通过清晰的视觉动线引导、便签式信息卡片与亲和力手绘图标，大幅提升新媒体图文完读率与收藏转发率。",
+      "coverThumb": "assets/thumbs/study_method_level_map_poster_1795156806012.webp",
+      "coverFull": "assets/full/study_method_level_map_poster_1795156806012.webp",
+      "aspectRatio": 0.7467,
+      "width": 896,
+      "height": 1200,
+      "palette": [
+        "#FDFAF1",
+        "#FAF8EF",
+        "#DFE4E2",
+        "#A1AEB8"
+      ],
+      "sourceFiles": [
+        "study_method_level_map_poster_1795156806012.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/study_method_level_map_poster_1795156806012.webp",
+          "full": "assets/full/study_method_level_map_poster_1795156806012.webp",
+          "aspectRatio": 0.7467,
+          "caption": "高效学习五关进阶闭环 · 视觉导图海报"
+        }
+      ]
+    },
+    {
+      "id": "tianyuc-logo-isometric",
+      "title": "TIANYUC · 等轴空间取景框几何标志",
+      "subtitle": "Isometric Viewfinder Monogram (TYC)",
+      "category": "brand",
+      "featured": false,
+      "layout": "standard",
+      "client": "TIANYUC DESIGN",
+      "year": "2026",
+      "specs": "1:1 品牌符号 / 字母 T·Y·C 空间负空间构成",
+      "tags": [
+        "品牌 Logo",
+        "字体与配色",
+        "实景样机提案"
+      ],
+      "description": "将品牌首字母 T、Y、C 整合进三维等轴立方体结构中，外围四角嵌入相机取景框对焦线，在远山云海的自然意境背板下展现出理性建筑感与影像张力。",
+      "coverThumb": "assets/thumbs/grs_v6_pro.webp",
+      "coverFull": "assets/full/grs_v6_pro.webp",
+      "aspectRatio": 1.0,
+      "width": 1200,
+      "height": 1200,
+      "palette": [
+        "#797E88",
+        "#B2B3B9",
+        "#8B909A",
+        "#6E635D"
+      ],
+      "sourceFiles": [
+        "grs_v6_pro.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/grs_v6_pro.webp",
+          "full": "assets/full/grs_v6_pro.webp",
+          "aspectRatio": 1.0,
+          "caption": "TIANYUC · 等轴空间取景框几何标志"
+        }
+      ]
+    },
+    {
+      "id": "tianyuc-logo-prism",
+      "title": "TIANYUC · 新东方几何棱镜快门标志",
+      "subtitle": "Neo-Oriental Prism Shutter Identity",
+      "category": "brand",
+      "featured": false,
+      "layout": "standard",
+      "client": "TIANYUC DESIGN",
+      "year": "2026",
+      "specs": "4:3 品牌提案 / 菱形快门折线 + 朱砂点睛",
+      "tags": [
+        "品牌 Logo",
+        "字体与配色",
+        "VI 视觉手册"
+      ],
+      "description": "以旋转 45° 的菱形窗格重构相机快门叶片，右上角点缀一抹东方朱砂红圆点，如同摄影红点标识与传统印泥的巧妙呼应。",
+      "coverThumb": "assets/thumbs/logo_concept_c_neo_oriental_prism_1794992460711.webp",
+      "coverFull": "assets/full/logo_concept_c_neo_oriental_prism_1794992460711.webp",
+      "aspectRatio": 1.3393,
+      "width": 1200,
+      "height": 896,
+      "palette": [
+        "#FFFFFF",
+        "#8D8C8C",
+        "#EBEBEB",
+        "#FFFFFE"
+      ],
+      "sourceFiles": [
+        "logo_concept_c_neo_oriental_prism_1794992460711.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/logo_concept_c_neo_oriental_prism_1794992460711.webp",
+          "full": "assets/full/logo_concept_c_neo_oriental_prism_1794992460711.webp",
+          "aspectRatio": 1.3393,
+          "caption": "TIANYUC · 新东方几何棱镜快门标志"
+        }
+      ]
+    },
+    {
+      "id": "tianyuc-logo-script",
+      "title": "TIANYUC · 环形快门光圈手写签名标志",
+      "subtitle": "Aperture Ring & Bespoke Calligraphic Logotype",
+      "category": "brand",
+      "featured": false,
+      "layout": "standard",
+      "client": "TIANYUC DESIGN",
+      "year": "2026",
+      "specs": "4:3 品牌提案 / 极细几何光圈 + 连笔手写体",
+      "tags": [
+        "品牌 Logo",
+        "字体与配色",
+        "VI 视觉手册"
+      ],
+      "description": "上方为精密旋转的环形镜头光圈与香槟金焦点，下方配以流畅洒脱的定制英文手写签名体，传递独立摄影师与设计师兼具理性精密与感性温度的创作态度。",
+      "coverThumb": "assets/thumbs/logo_concept_a_final_1794992318724.webp",
+      "coverFull": "assets/full/logo_concept_a_final_1794992318724.webp",
+      "aspectRatio": 1.3393,
+      "width": 1200,
+      "height": 896,
+      "palette": [
+        "#FFFFFF",
+        "#A5A6A7",
+        "#E9EAEA",
+        "#FBFBFB"
+      ],
+      "sourceFiles": [
+        "logo_concept_a_final_1794992318724.jpg"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/logo_concept_a_final_1794992318724.webp",
+          "full": "assets/full/logo_concept_a_final_1794992318724.webp",
+          "aspectRatio": 1.3393,
+          "caption": "TIANYUC · 环形快门光圈手写签名标志"
+        }
+      ]
+    }
+  ]
+}

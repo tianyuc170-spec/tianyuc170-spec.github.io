@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIANYUC DESIGN · 陈天宇 | 品牌识别 · 商业海报 · 电商视觉 · 空间展陈</title>
+  <meta name="description" content="TIANYUC DESIGN（陈天宇·摄影与视觉设计）商业设计作品集：涵盖品牌识别与VI、商业海报与视觉物料、空间文化墙、电商视觉与详情页、室内设计及包装印前工艺。" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232B2E3A'/%3E%3Cpath d='M12 13h16v3.2h-6.4V29h-3.2V16.2H12z' fill='%23ffffff'/%3E%3Ccircle cx='28' cy='27' r='2.5' fill='%235CE1E6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css?v=20261121g" />
+  <link rel="stylesheet" href="css/fx.css?v=20261121e" />
+</head>
+<body>
+  <!-- 冰银流体光晕与轨道几何工作室启幕预加载 (#preloader) -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-bg">
+      <div class="preloader-orb orb-cyan"></div>
+      <div class="preloader-orb orb-gold"></div>
+      <div class="preloader-sheen"></div>
+      <svg class="preloader-orbit-svg" viewBox="0 0 400 400" fill="none">
+        <g class="orbit-outer">
+          <circle cx="200" cy="200" r="186" stroke="currentColor" stroke-width="0.9" stroke-dasharray="3 9" />
+          <path d="M200 6v14M200 380v14M6 200h14M380 200h14" stroke="currentColor" stroke-width="1.2" />
+        </g>
+        <g class="orbit-inner">
+          <circle cx="200" cy="200" r="144" stroke="currentColor" stroke-width="0.8" stroke-dasharray="140 80 40 80" stroke-linecap="round" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="preloader-corners">
+      <span class="mono-label corner-tl">TIANYUC STUDIO // 2026</span>
+      <span class="mono-label corner-tr">VISUAL ARCHIVE</span>
+      <span class="mono-label corner-bl">BRAND · POSTER · E-COMMERCE · SPACE</span>
+      <span class="mono-label corner-br">LOADING PORTFOLIO</span>
+    </div>
+
+    <div class="preloader-inner" id="preloaderInner">
+      <svg class="preloader-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="36" height="36" rx="10" stroke="currentColor" stroke-width="1.5" />
+        <path d="M12 13.5h16M20 13.5V28" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" />
+        <circle cx="27.5" cy="26.5" r="2.6" fill="var(--spline-primary)" />
+      </svg>
+
+      <div class="preloader-wordmark">TIANYUC DESIGN</div>
+      <div class="preloader-sub">陈天宇 · 商业视觉与平面设计</div>
+
+      <div class="preloader-line-wrap" id="preloaderBarWrap">
+        <div class="preloader-line-fill" id="preloaderBarFill"></div>
+      </div>
+
+      <span class="preloader-percent" id="preloaderCounter">00%</span>
+    </div>
+  </div>
+
+  <!-- 全页极简微光粒子 / WebGL 流体极光环境背景 -->
+  <canvas id="lusionHeroCanvas" class="global-bg-canvas" aria-hidden="true"></canvas>
+  <div class="fx-grid" aria-hidden="true"></div>
+  <div class="fx-grain" aria-hidden="true"></div>
+
+  <!-- 顶部滚动进度光学丝线 -->
+  <div class="scroll-progress-bar" aria-hidden="true">
+    <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+  </div>
+
+  <!-- Lusion 悬浮胶囊顶栏 (#header) 与浮动圆角菜单卡片 (#header-menu) -->
+  <header id="header" class="site-header">
+    <div class="container header-inner">
+      <a href="#top" id="header-logo" class="brand-lockup" aria-label="TIANYUC DESIGN 首页">
+        <svg class="brand-aperture-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="10" stroke="currentColor" stroke-width="1.6" />
+          <path d="M12 13.5h16M20 13.5V28" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" />
+          <circle cx="27.5" cy="26.5" r="2.6" fill="var(--spline-primary)" />
+        </svg>
+        <div class="brand-text-group">
+          <span class="brand-title" id="headerBrandName">TIANYUC DESIGN</span>
+          <span class="brand-sub" id="headerBrandSub">陈天宇 · 商业视觉设计</span>
+        </div>
+      </a>
+
+      <div id="header-right" class="header-actions">
+        <!-- 1. 圆形声波/明暗主题切换胶囊 -->
+        <button type="button" class="lusion-circle-pill" id="themeToggleBtn" aria-label="切换冰银白昼与深空暗调模式" title="切换画廊昼夜模式">
+          <svg class="wave-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M3 12h3l2-5 4 10 3-7 2 2h4" />
+          </svg>
+          <span class="sr-only" id="themeToggleLabel">深空暗调</span>
+        </button>
+
+        <!-- 2. 深色胶囊 CTA：微信咨询 -->
+        <button type="button" id="header-right-talk-btn" class="lusion-talk-pill js-copy-wechat" aria-label="复制设计师微信号 z2728588294">
+          <span class="talk-arrow-in" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </span>
+          <span class="talk-text"><span class="talk-prefix">微信 </span><strong class="js-wechat-text">z2728588294</strong></span>
+          <span class="talk-dot" aria-hidden="true"></span>
+        </button>
+
+        <!-- 3. 浅灰胶囊 MENU 按钮 -->
+        <button type="button" id="header-right-menu-btn" class="lusion-menu-pill" aria-expanded="false" aria-controls="header-menu">
+          <span class="menu-btn-roll">
+            <span class="menu-txt-open">MENU</span>
+            <span class="menu-txt-close">CLOSE</span>
+          </span>
+          <span class="menu-dots" aria-hidden="true">
+            <i></i><i></i>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 浮动圆角下拉菜单卡片 (#header-menu) -->
+    <div id="header-menu" class="lusion-menu-card" aria-hidden="true">
+      <nav class="lusion-menu-links" aria-label="主导航菜单">
+        <a href="#home-hero" class="menu-roll-link">
+          <span class="roll-text-wrap"><span>01 / HOME · 首屏展台</span><span>01 / HOME · 首屏展台</span></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#capabilities" class="menu-roll-link">
+          <span class="roll-text-wrap"><span>02 / DISCIPLINES · 六大业务板块</span><span>02 / DISCIPLINES · 六大业务板块</span></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#home-featured" class="menu-roll-link">
+          <span class="roll-text-wrap"><span>03 / FEATURED WORK · 作品档案</span><span>03 / FEATURED WORK · 作品档案</span></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#process" class="menu-roll-link">
+          <span class="roll-text-wrap"><span>04 / WORKFLOW · 交付准则</span><span>04 / WORKFLOW · 交付准则</span></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="menu-roll-link">
+          <span class="roll-text-wrap"><span>05 / CONTACT · 商务咨询</span><span>05 / CONTACT · 商务咨询</span></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </nav>
+
+      <div class="lusion-menu-footer">
+        <div class="menu-footer-badge">
+          <span class="mono-label">DIRECT WECHAT</span>
+          <strong class="js-wechat-text" style="font-family:var(--font-mono);">z2728588294</strong>
+        </div>
+        <button type="button" class="lusion-dark-mini-btn js-copy-wechat">
+          <span>复制微信</span>
+          <span>↗</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 第 1 页 (#home-hero)：右侧仅保留纯粹单个 LOGO 标识展示 -->
+    <section id="home-hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-top-row">
+          <div class="hero-eyebrow">
+            <span class="status-dot-pulse" aria-hidden="true"></span>
+            <span id="heroAvailability">档期开放 · 承接品牌全案 / 电商视觉 / 商业平面与空间落地</span>
+          </div>
+          <div class="mono-label">TIANYUC VISUAL ARCHIVE · 2026</div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="home-hero-title" class="hero-title">
+              <span class="hero-title-en">TIANYUC VISUAL ARCHIVE &amp; DESIGN STUDIO</span>
+              <span id="heroTitleText">商业视觉与平面设计</span>
+            </h1>
+
+            <p class="hero-subtitle" id="heroSubtitleText">
+              提供品牌标志、活动海报、电商详情与室内文化墙设计
+            </p>
+
+            <!-- 仅保留纯净板块序号与名称，移除多余角标数字 -->
+            <div class="hero-quick-categories" id="heroCategoryChips" aria-label="六大业务板块快捷直达"></div>
+
+            <div class="hero-cta-row">
+              <a href="#capabilities" class="lusion-pill-cta">
+                <span class="pill-cta-dot" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+                <span class="pill-cta-label">浏览六大板块 &amp; 作品 <span id="heroTotalWorksCount">(15)</span></span>
+                <span class="pill-cta-arrow" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+
+              <button type="button" class="lusion-pill-cta is-outline js-copy-wechat">
+                <span class="pill-cta-dot" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+                <span class="pill-cta-label">复制微信咨询：<strong class="js-wechat-text">z2728588294</strong></span>
+                <span class="pill-cta-arrow" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-stage-wrap">
+            <div class="hero-single-stage" id="heroParallaxStage">
+              <div class="stage-halo" aria-hidden="true"></div>
+              <svg class="stage-orbit" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2 6" />
+              </svg>
+              <div class="hero-single-logo-card" data-work-id="tianyuc-logo-seal" tabindex="0" role="button" aria-label="查看 TIANYUC DESIGN 品牌标志">
+                <img src="assets/thumbs/grs_v9_orchestrator.webp" alt="TIANYUC DESIGN 陈天宇 · 品牌视觉标识" />
+                <span class="card-glare" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lusion 十字准星探索条 -->
+        <div id="home-hero-scroll-container" class="lusion-crosshair-bar">
+          <span class="crosshair-plus">+</span>
+          <span class="crosshair-text">SCROLL TO EXPLORE / 向下滑动浏览六大业务与作品档案</span>
+          <span class="crosshair-plus">+</span>
+          <span class="crosshair-text hide-xs">WECHAT: <strong class="js-wechat-text">z2728588294</strong></span>
+          <span class="crosshair-plus">+</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 业务关键词双轨跑马灯 -->
+    <section class="discipline-marquee" aria-label="业务关键词">
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span class="mq-item">BRAND IDENTITY 品牌识别</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">POSTER CAMPAIGN 商业海报</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">SPATIAL DISPLAY 空间展陈</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">E-COMMERCE 电商视觉</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">INTERIOR 室内设计</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">PACKAGING 包装印前</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span class="mq-item">BRAND IDENTITY 品牌识别</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">POSTER CAMPAIGN 商业海报</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">SPATIAL DISPLAY 空间展陈</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">E-COMMERCE 电商视觉</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">INTERIOR 室内设计</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">PACKAGING 包装印前</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="marquee-row is-reverse is-outline">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span class="mq-item">BRAND IDENTITY 品牌识别</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">POSTER CAMPAIGN 商业海报</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">SPATIAL DISPLAY 空间展陈</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">E-COMMERCE 电商视觉</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">INTERIOR 室内设计</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">PACKAGING 包装印前</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span class="mq-item">BRAND IDENTITY 品牌识别</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">POSTER CAMPAIGN 商业海报</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">SPATIAL DISPLAY 空间展陈</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">E-COMMERCE 电商视觉</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">INTERIOR 室内设计</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            <span class="mq-item">PACKAGING 包装印前</span>
+            <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 贯通第 2 页至第 5 页的流式内容区（已移除粗蓝线条，保留柔和粒子背景） -->
+    <div class="lusion-flow-wrapper" id="lusionFlowWrapper">
+      <!-- 第 2 页 (#capabilities)：精简高级版六大商业视觉板块 -->
+      <section class="capabilities-section" id="capabilities">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="mono-label">PAGE 02 // 06 DISCIPLINES · 业务覆盖与交付矩阵</span>
+              <h2 class="section-heading">六大商业视觉核心板块</h2>
+            </div>
+            <p class="section-desc">
+              精炼呈现核心业务边界；点击任意板块卡片浏览精选案例，或点击卡片右上角「服务标准」查看完整印前与施工交付规范。
+            </p>
+          </div>
+
+          <div class="capabilities-grid" id="capabilitiesMatrix"></div>
+        </div>
+      </section>
+
+      <!-- 第 3 页 (#home-featured)：Featured Work + 6 大板块筛选 + 独立拆分浮动放大作品卡 -->
+      <section id="home-featured" class="featured-section">
+        <div class="container">
+          <div id="home-featured-title-top" class="featured-header-grid">
+            <div class="featured-title-wrap">
+              <span class="mono-label">PAGE 03 // SELECTED ARCHIVE · 06 CATEGORIES</span>
+              <h2 id="home-featured-title" class="featured-monument-title">Featured Work</h2>
+            </div>
+
+            <p id="home-featured-disclaimer" class="featured-disclaimer">
+              A SELECTION OF BRAND IDENTITIES, E-COMMERCE VISUALS, COMMERCIAL CAMPAIGNS &amp; CULTURAL DISPLAYS.
+              <br />独立卡片展示 · 鼠标悬停纯正上浮放大 · 无倾斜干扰
+            </p>
+
+            <div class="featured-cta-col">
+              <button type="button" class="lusion-pill-cta js-copy-wechat">
+                <span class="pill-cta-dot" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+                <span class="pill-cta-label">咨询档期 · 微信 <span class="js-wechat-text">z2728588294</span></span>
+                <span class="pill-cta-arrow" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 吸顶胶囊分类筛选栏 -->
+          <div class="filter-bar-wrap" id="gallery">
+            <div class="filter-bar-inner">
+              <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="作品分类筛选"></div>
+
+              <div class="filter-tools">
+                <div class="search-box">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <input type="search" id="workSearchInput" class="search-input" placeholder="搜索作品 / 标签 / 行业..." aria-label="搜索作品" />
+                </div>
+
+                <div class="layout-switch" role="group" aria-label="画廊排布模式">
+                  <button type="button" class="layout-btn is-active" data-layout="masonry" title="保留每张作品原生比例">原生画幅</button>
+                  <button type="button" class="layout-btn" data-layout="uniform" title="统一4:3严谨网格">严谨网格</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 当前分类标题与服务标准入口 -->
+          <div class="active-cat-banner">
+            <div>
+              <span class="mono-label" id="activeCategoryEn">SELECTED ARCHIVE · ALL 06 DISCIPLINES</span>
+              <h3 class="active-cat-heading" id="activeCategoryHeading">全部商业视觉作品集</h3>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;">
+              <p class="section-desc" id="activeCategoryDesc">
+                全部作品独立单卡陈列，保留原生构图比例；鼠标悬停平滑上浮放大，点击开启全屏高清细节检视。
+              </p>
+              <button type="button" class="btn-outline-sm" id="openActiveCraftSpecBtn" style="display:none;">
+                <span>查看交付标准与印前规范 →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 动态作品画廊宿主 -->
+          <div id="galleryDynamicHost"></div>
+        </div>
+      </section>
+
+      <!-- 第 5 页 (#process)：设计方法论与印前/线上落地流程 -->
+      <section class="process-section" id="process">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="mono-label">WORKFLOW // 从需求拆解到精准落地</span>
+              <h2 class="section-heading">商业交付四重准则</h2>
+            </div>
+            <p class="section-desc">
+              前端视觉兼具高级感与转化力，后端严格遵循印刷施工与多平台电商标准，确保每一份作品零偏差落地。
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-step">
+              <span class="process-step-num">01</span>
+              <h3 class="process-step-title">策略定调</h3>
+              <p class="process-step-desc">厘清商业目标与使用场景，确定差异化的视觉方向。</p>
+            </article>
+            <article class="process-step">
+              <span class="process-step-num">02</span>
+              <h3 class="process-step-title">视觉提案</h3>
+              <p class="process-step-desc">完成核心设计，并通过实景样机直观呈现最终效果。</p>
+            </article>
+            <article class="process-step">
+              <span class="process-step-num">03</span>
+              <h3 class="process-step-title">落地把控</h3>
+              <p class="process-step-desc">严格把关色彩、尺寸与印前工艺规范，消除落地偏差。</p>
+            </article>
+            <article class="process-step">
+              <span class="process-step-num">04</span>
+              <h3 class="process-step-title">规范交付</h3>
+              <p class="process-step-desc">整理交付全套源文件与多端高清图，支持后续灵活迭代。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 页脚与微信直联 -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-cta-grid">
+        <div>
+          <span class="mono-label">COMMISSION &amp; COLLABORATION // 商务洽谈</span>
+          <h2 class="footer-headline">
+            有品牌全案、海报视觉、<br />电商详情或空间文化墙需求？
+          </h2>
+          <p class="hero-subtitle" style="margin-bottom:0;">
+            直接添加设计师微信发送您的行业、参考风格或尺寸需求，即可获取定制方案报价与档期排期。
+          </p>
+        </div>
+
+        <div class="wechat-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span class="mono-label">DIRECT WECHAT / 设计师直联微信</span>
+            <span class="status-pill">
+              <span class="status-dot-pulse"></span> 在线接单
+            </span>
+          </div>
+          <div class="wechat-id-display js-wechat-text">z2728588294</div>
+          <button type="button" class="lusion-pill-cta js-copy-wechat" style="width:100%;justify-content:space-between;">
+            <span class="pill-cta-dot" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+            <span class="pill-cta-label">一键复制微信号 z2728588294</span>
+            <span class="pill-cta-arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+          <p class="mono-label" style="font-size:0.7rem;">
+            TIANYUC DESIGN · 陈天宇 | 品牌识别 / 电商视觉 / 室内设计 / 包装印前
+          </p>
+        </div>
+      </div>
+
+      <!-- 页脚巨幅视觉跑马灯 -->
+      <div class="footer-marquee" aria-hidden="true">
+        <div class="marquee-row">
+          <div class="marquee-track">
+            <div class="marquee-group">
+              <span class="mq-item">LET'S CREATE SOMETHING REMARKABLE</span>
+              <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+              <span class="mq-item">一起创造值得被记住的视觉</span>
+              <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            </div>
+            <div class="marquee-group">
+              <span class="mq-item">LET'S CREATE SOMETHING REMARKABLE</span>
+              <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+              <span class="mq-item">一起创造值得被记住的视觉</span>
+              <svg class="mq-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 TIANYUC DESIGN · 陈天宇视觉设计工作室. ALL RIGHTS RESERVED.</span>
+        <a href="#top" class="admin-trigger-link" id="backToTopLink">
+          <span>↑ BACK TO TOP / 返回顶部</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 服务标准 / 交付规范详情弹窗 (#craftSpecModal) -->
+  <div class="craft-modal-backdrop" id="craftSpecModal" role="dialog" aria-modal="true" aria-labelledby="craftModalTitle">
+    <div class="craft-modal-card">
+      <div class="craft-modal-header">
+        <div>
+          <span class="mono-label" id="craftModalNum" style="color:var(--spline-primary);">01 // SERVICE STANDARD</span>
+          <h3 id="craftModalTitle" class="craft-modal-title">服务标准与交付规范</h3>
+          <div class="mono-label" id="craftModalEn" style="margin-top:4px;"></div>
+        </div>
+        <button type="button" class="btn-outline-sm" id="craftModalCloseBtn" aria-label="关闭规范弹窗">关闭 (ESC)</button>
+      </div>
+
+      <p id="craftModalDesc" class="craft-modal-desc"></p>
+
+      <div class="craft-tags-row" id="craftModalTags"></div>
+
+      <div class="craft-standards-box">
+        <div class="craft-box-head">
+          <span class="mono-label">DELIVERY &amp; PRE-PRESS SPECIFICATIONS / 专业交付与印前标准</span>
+          <span class="craft-formats-badge" id="craftModalFormats">AI · CDR · PSD · PDF</span>
+        </div>
+        <ul class="craft-standards-list" id="craftModalList"></ul>
+      </div>
+
+      <div class="craft-modal-footer">
+        <button type="button" class="btn-secondary-lg" id="craftModalJumpWorksBtn">查看该板块精选作品</button>
+        <button type="button" class="lusion-pill-cta js-copy-wechat">
+          <span class="pill-cta-dot" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          <span class="pill-cta-label">微信咨询定制：<span class="js-wechat-text">z2728588294</span></span>
+          <span class="pill-cta-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 三合一高定作品详情灯箱 -->
+  <aside class="lightbox-modal" id="caseLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-topbar">
+      <div style="display:flex;align-items:center;gap:12px;min-width:0;">
+        <span class="mono-label" id="lightboxCounter" style="color:var(--spline-primary);">01 / 01</span>
+        <span id="lightboxTopTitle" style="font-size:0.9rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></span>
+      </div>
+
+      <div class="lightbox-tools">
+        <button type="button" class="btn-outline-sm" id="lightboxModeToggleBtn" title="在单张画框检视与电商长图无缝滚动之间切换">
+          <span id="lightboxModeLabel">切换长图模式</span>
+        </button>
+        <button type="button" class="btn-outline-sm" id="lightboxZoomBtn">
+          <span>放大细节 (1x)</span>
+        </button>
+        <button type="button" class="btn-outline-sm" id="lightboxCloseBtn" aria-label="关闭作品详情">
+          <span>关闭 (ESC)</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="lightbox-body">
+      <div class="lightbox-stage">
+        <div class="lightbox-canvas" id="lightboxCanvas"></div>
+        <div class="lightbox-filmstrip" id="lightboxFilmstrip"></div>
+      </div>
+
+      <div class="lightbox-sidebar">
+        <div>
+          <span class="mono-label" id="lightboxCatBadge" style="color:var(--spline-primary);">CATEGORY</span>
+          <h2 class="work-card-title" id="lightboxTitle" style="font-size:1.45rem;margin-top:8px;"></h2>
+          <p class="work-card-sub" id="lightboxSubtitle" style="margin-top:4px;"></p>
+        </div>
+
+        <p id="lightboxDesc" style="font-size:0.88rem;line-height:1.75;color:var(--text-secondary);"></p>
+
+        <div class="lightbox-meta-list">
+          <div class="lightbox-meta-row">
+            <span class="lightbox-meta-key">CLIENT / 客户</span>
+            <span class="lightbox-meta-val" id="lightboxClient"></span>
+          </div>
+          <div class="lightbox-meta-row">
+            <span class="lightbox-meta-key">YEAR / 年份</span>
+            <span class="lightbox-meta-val" id="lightboxYear"></span>
+          </div>
+          <div class="lightbox-meta-row">
+            <span class="lightbox-meta-key">SPECS / 工艺规格</span>
+            <span class="lightbox-meta-val" id="lightboxSpecs"></span>
+          </div>
+          <div class="lightbox-meta-row">
+            <span class="lightbox-meta-key">CAPTION / 当前图注</span>
+            <span class="lightbox-meta-val" id="lightboxImageCaption"></span>
+          </div>
+        </div>
+
+        <div>
+          <span class="mono-label" style="display:block;margin-bottom:10px;">COLOR GENES / 作品提取色板（点击复制）</span>
+          <div class="palette-swatches-row" id="lightboxPalette"></div>
+        </div>
+
+        <div>
+          <span class="mono-label" style="display:block;margin-bottom:10px;">TAGS / 项目关键词</span>
+          <div class="work-tags" id="lightboxTags"></div>
+        </div>
+
+        <div style="margin-top:auto;padding-top:14px;">
+          <button type="button" class="lusion-pill-cta js-copy-wechat" style="width:100%;justify-content:space-between;">
+            <span class="pill-cta-dot" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+            <span class="pill-cta-label">咨询同款 · 微信 <span class="js-wechat-text">z2728588294</span></span>
+            <span class="pill-cta-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast 通知容器 -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- 本地化无阻塞引擎库 -->
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/Flip.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/fx.js?v=20261121b"></script>
+  <script src="js/app.js?v=20261121g"></script>
+</body>
+</html>

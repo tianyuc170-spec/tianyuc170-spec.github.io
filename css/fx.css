@@ -1,0 +1,564 @@
+/* ==========================================================================
+   TIANYUC DESIGN · 高定视觉交互与动态氛围层 (fx.css)
+   主题约束：冰银 / 品牌青 (#06b6d4 / #5ce1e6) / 深青 (#0e7490) / 香槟暖金 (#f5d9b8 / #d4a373)
+   ========================================================================== */
+
+:root {
+  --fx-gold: #f5d9b8;
+  --fx-grid-dot: rgba(11, 12, 16, 0.16);
+  --fx-spot-fill: rgba(6, 182, 212, 0.13);
+  --fx-spot-border: rgba(6, 182, 212, 0.72);
+  --fx-glare-alpha: 0.36;
+  --fx-grain-opacity: 0.048;
+  --fx-marquee-bg: rgba(240, 241, 250, 0.42);
+}
+
+[data-theme="dark"] {
+  --fx-gold: #d4a373;
+  --fx-grid-dot: rgba(92, 225, 230, 0.24);
+  --fx-spot-fill: rgba(92, 225, 230, 0.14);
+  --fx-spot-border: rgba(92, 225, 230, 0.78);
+  --fx-glare-alpha: 0.18;
+  --fx-grain-opacity: 0.068;
+  --fx-marquee-bg: rgba(9, 10, 15, 0.48);
+}
+
+/* ---------- 1. 交互点阵层 & 胶片微粒层 ---------- */
+.fx-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: radial-gradient(circle, var(--fx-grid-dot) 1.15px, transparent 1.6px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(260px circle at var(--cx, -400px) var(--cy, -400px), #000 0%, rgba(0, 0, 0, 0.45) 45%, transparent 72%);
+  mask-image: radial-gradient(260px circle at var(--cx, -400px) var(--cy, -400px), #000 0%, rgba(0, 0, 0, 0.45) 45%, transparent 72%);
+  opacity: 0.95;
+}
+
+.fx-grain {
+  position: fixed;
+  inset: -6%;
+  width: 112%;
+  height: 112%;
+  z-index: 3;
+  pointer-events: none;
+  opacity: var(--fx-grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  animation: fxGrainShift 1s steps(6) infinite;
+}
+
+@keyframes fxGrainShift {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2%, 1.5%); }
+  40% { transform: translate(1.5%, -2%); }
+  60% { transform: translate(-1.5%, -1.5%); }
+  80% { transform: translate(2%, 1%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ---------- 2. 顶部进度线 & 滚动状态页头增强 ---------- */
+.scroll-progress-fill {
+  background: linear-gradient(90deg, var(--spline-primary), var(--fx-gold), var(--spline-primary));
+  background-size: 200% 100%;
+}
+
+.site-header {
+  transition: background-color 0.35s var(--ease-expo), border-color 0.35s ease, box-shadow 0.35s var(--ease-expo);
+  border-bottom: 1px solid transparent;
+}
+
+.site-header.is-scrolled {
+  background: var(--bg-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom-color: var(--border-hairline);
+  box-shadow: 0 12px 34px rgba(11, 12, 16, 0.08);
+}
+
+[data-theme="dark"] .site-header.is-scrolled {
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.42);
+}
+
+.site-header.is-scrolled .brand-lockup {
+  box-shadow: var(--shadow-card);
+  border-color: var(--border-medium);
+}
+
+/* ---------- 3. Hero 分字揭示 + 英文流光 + 展台光晕轨道 ---------- */
+.hero-title-en {
+  display: block;
+  width: fit-content;
+  background: linear-gradient(90deg, var(--spline-primary) 0%, #a16f33 45%, var(--spline-primary) 90%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: fxTextShimmer 6s linear infinite;
+}
+
+[data-theme="dark"] .hero-title-en {
+  background: linear-gradient(90deg, var(--spline-primary) 0%, var(--fx-gold) 45%, var(--spline-primary) 90%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes fxTextShimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.char-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: 1.16;
+}
+
+.char-mask .char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.hero-top-row {
+  position: relative;
+  z-index: 4;
+}
+
+.hero-stage-wrap {
+  perspective: 1100px;
+}
+
+.hero-single-stage {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@property --halo-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.stage-halo {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(520px, 118%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: conic-gradient(from var(--halo-angle), #06b6d4, #f5d9b8, #5ce1e6, #0e7490, #06b6d4);
+  filter: blur(60px);
+  opacity: 0.45;
+  z-index: 0;
+  pointer-events: none;
+  animation: fxHaloSpin 16s linear infinite;
+}
+
+[data-theme="dark"] .stage-halo {
+  background: conic-gradient(from var(--halo-angle), #0e7490, #d4a373, #5ce1e6, #0e7490);
+  opacity: 0.35;
+}
+
+@keyframes fxHaloSpin {
+  to {
+    --halo-angle: 360deg;
+  }
+}
+
+@supports not (background: conic-gradient(from var(--halo-angle), red, blue)) {
+  .stage-halo {
+    animation: fxHaloRotateFallback 16s linear infinite;
+  }
+  @keyframes fxHaloRotateFallback {
+    to { transform: rotate(360deg); }
+  }
+}
+
+.stage-orbit {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(572px, 128%);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  color: var(--border-medium);
+  z-index: 1;
+  pointer-events: none;
+  animation: fxOrbitSpin 60s linear infinite;
+}
+
+@keyframes fxOrbitSpin {
+  to { transform: rotate(360deg); }
+}
+
+.hero-single-logo-card {
+  position: relative;
+  z-index: 2;
+}
+
+.card-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    360px circle at var(--gx, 50%) var(--gy, 50%),
+    rgba(255, 255, 255, var(--fx-glare-alpha)),
+    transparent 62%
+  );
+  mix-blend-mode: screen;
+}
+
+.hero-single-logo-card:hover .card-glare {
+  opacity: 1;
+}
+
+/* ---------- 4. 业务关键词双轨跑马灯 & 页脚大字跑马灯 ---------- */
+.discipline-marquee {
+  position: relative;
+  z-index: 2;
+  padding: 28px 0;
+  border-top: 1px solid var(--border-hairline);
+  border-bottom: 1px solid var(--border-hairline);
+  background: var(--fx-marquee-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.marquee-row {
+  width: 100%;
+  overflow: hidden;
+  transform: skewX(var(--skew, 0deg));
+  will-change: transform;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: fxMarquee 38s linear infinite;
+  will-change: transform;
+}
+
+.marquee-row.is-reverse .marquee-track {
+  animation-direction: reverse;
+  animation-duration: 44s;
+}
+
+.discipline-marquee:hover .marquee-track,
+.footer-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 2.2rem;
+  padding-right: 2.2rem;
+}
+
+.mq-item {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5.6vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.marquee-row.is-outline .mq-item {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-muted);
+}
+
+.marquee-row.is-outline .mq-item:hover {
+  color: var(--spline-primary);
+  -webkit-text-stroke-color: transparent;
+}
+
+.mq-star {
+  width: 0.5em;
+  height: 0.5em;
+  font-size: clamp(2.2rem, 5.6vw, 5rem);
+  color: var(--spline-primary);
+  flex-shrink: 0;
+}
+
+@keyframes fxMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* 页脚巨幅跑马灯 */
+.footer-marquee {
+  position: relative;
+  margin-top: clamp(32px, 4vw, 56px);
+  padding: 20px 0 8px;
+  border-top: 1px solid var(--border-hairline);
+  overflow: hidden;
+}
+
+.footer-marquee .marquee-track {
+  animation-duration: 34s;
+}
+
+.footer-marquee .mq-item {
+  font-size: clamp(3rem, 9vw, 8.5rem);
+  line-height: 1.02;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-muted);
+  transition: color 0.35s var(--ease-expo), -webkit-text-stroke-color 0.35s ease;
+}
+
+.footer-marquee:hover .mq-item {
+  color: var(--spline-primary);
+  -webkit-text-stroke-color: transparent;
+}
+
+.footer-marquee .mq-star {
+  font-size: clamp(3rem, 9vw, 8.5rem);
+}
+
+/* ---------- 5. 卡片聚光与 1px 跟随光晕边框 ---------- */
+.work-card,
+.cap-cell,
+.process-step,
+.wechat-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.cap-cell > *,
+.process-step > *,
+.wechat-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.work-card::before,
+.cap-cell::before,
+.process-step::before,
+.wechat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    260px circle at var(--mx, -999px) var(--my, -999px),
+    var(--fx-spot-border),
+    transparent 65%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 3;
+}
+
+.work-card::after,
+.cap-cell::after,
+.process-step::after,
+.wechat-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    420px circle at var(--mx, -999px) var(--my, -999px),
+    var(--fx-spot-fill),
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 0;
+}
+
+.work-card::after {
+  z-index: 2;
+}
+
+.work-card:hover::before,
+.work-card:hover::after,
+.cap-cell:hover::before,
+.cap-cell:hover::after,
+.process-step:hover::before,
+.process-step:hover::after,
+.wechat-card:hover::before,
+.wechat-card:hover::after {
+  opacity: 1;
+}
+
+/* ---------- 6. Process 交付流程进度轨道与节点 ---------- */
+.process-grid {
+  position: relative;
+  padding-top: 34px;
+}
+
+.process-grid::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border-hairline);
+}
+
+.process-grid::after {
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: 0;
+  height: 2px;
+  width: calc(var(--p, 0) * 100%);
+  background: linear-gradient(90deg, var(--spline-primary), var(--fx-gold));
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.45);
+}
+
+.process-node-dot {
+  position: absolute;
+  top: -31px;
+  left: 24px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border-medium);
+  z-index: 4;
+  transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s var(--ease-expo);
+  pointer-events: none;
+}
+
+.process-step.is-lit .process-node-dot {
+  background: var(--spline-primary);
+  border-color: var(--spline-primary);
+  box-shadow: 0 0 0 4px var(--accent-subtle), 0 0 16px var(--spline-primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 1120px) {
+  .process-grid {
+    padding-top: 0;
+  }
+  .process-grid::before,
+  .process-grid::after,
+  .process-node-dot {
+    display: none;
+  }
+}
+
+/* ---------- 7. 自定义高端跟踪光标 (桌面精准指针专用，保留原生硬件光标 0ms 跟手) ---------- */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  will-change: transform, width, height, opacity;
+}
+
+.cursor-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--spline-primary) 0%, transparent 70%);
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1.5px solid var(--text-primary);
+  border-color: color-mix(in srgb, var(--text-primary) 50%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pill-dark-fg);
+  transition:
+    width 0.18s var(--ease-expo),
+    height 0.18s var(--ease-expo),
+    background-color 0.18s var(--ease-expo),
+    border-color 0.18s var(--ease-expo),
+    opacity 0.2s ease;
+}
+
+.cursor-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.18s ease, transform 0.2s var(--ease-expo);
+}
+
+.cursor-ring.is-hover {
+  width: 68px;
+  height: 68px;
+  background: var(--accent-subtle);
+  border-color: var(--spline-primary);
+}
+
+.cursor-ring.is-view {
+  width: 88px;
+  height: 42px;
+  background: var(--pill-dark-bg);
+  border-color: var(--pill-dark-bg);
+  box-shadow: 0 12px 28px rgba(11, 12, 16, 0.24);
+}
+
+.cursor-ring.is-view .cursor-label {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 触屏或非 hover 设备隐藏光标与点阵 */
+@media (hover: none), (pointer: coarse) {
+  .fx-grid,
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+}
+
+/* ---------- 8. 动效减弱无障碍回退 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .fx-grain,
+  .fx-grid,
+  .stage-halo,
+  .stage-orbit,
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+
+  .hero-title-en {
+    animation: none !important;
+    background: none !important;
+    color: var(--spline-primary) !important;
+    -webkit-text-fill-color: var(--spline-primary) !important;
+  }
+}
