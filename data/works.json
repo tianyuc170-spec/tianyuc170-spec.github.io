@@ -139,6 +139,162 @@
   ],
   "works": [
     {
+      "id": "bbq-menu-dark-a",
+      "title": "小杨烧烤 · 国潮黑金餐饮点菜单（A面 · 烤肉蔬食篇）",
+      "subtitle": "Chinese Neo-Classical BBQ Menu Design · Side A (Grills & Veggies)",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "小杨烧烤 · 餐饮连锁门店",
+      "year": "2026",
+      "specs": "A3 横版双面塑封菜单 / 玄黑描金回纹边框 + 招牌菜品实拍图鉴",
+      "tags": [
+        "餐饮菜单设计",
+        "折页与画册",
+        "营销海报"
+      ],
+      "description": "针对夜宵烧烤门店打造的高辨识度国潮黑金版点菜单（A面）。外框采用中式鎏金回纹与暗红底纹烘托炭火烟火气，内区以暖米宣纸色块承载『烤肉类』与『蔬食类』高密度价目表，搭配『必点』朱砂印章角标与右侧五大招牌菜品高清图卡，兼顾夜间弱光环境下的高可读性与点单转化率。",
+      "coverThumb": "assets/thumbs/11.webp",
+      "coverFull": "assets/full/11.webp",
+      "aspectRatio": 1.4906,
+      "width": 1200,
+      "height": 805,
+      "palette": [
+        "#F4E4CC",
+        "#381D1C",
+        "#5B4439",
+        "#CAB5A0"
+      ],
+      "sourceFiles": [
+        "11.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/11.webp",
+          "full": "assets/full/11.webp",
+          "aspectRatio": 1.4906,
+          "caption": "小杨烧烤 · 国潮黑金点菜单 A面（烤肉类 & 蔬食类）"
+        }
+      ]
+    },
+    {
+      "id": "bbq-menu-dark-b",
+      "title": "小杨烧烤 · 国潮黑金餐饮点菜单（B面 · 龙虾热菜与酒水篇）",
+      "subtitle": "Chinese Neo-Classical BBQ Menu Design · Side B (Crayfish, Hot Dishes & Drinks)",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "小杨烧烤 · 餐饮连锁门店",
+      "year": "2026",
+      "specs": "A3 横版双面塑封菜单 / 四栏高密度信息排版 + 主推套餐视觉锚点",
+      "tags": [
+        "餐饮菜单设计",
+        "折页与画册",
+        "营销海报"
+      ],
+      "description": "与黑金版 A 面配套的背面点菜单设计。采用清晰四栏网格统筹『锡纸类』『龙虾类』『凉菜下酒菜』『热菜类』『饮料类』与『主食类』六大分区；左下角以油焖、蒜蓉、麻辣三款小龙虾实拍图搭配红金价格横幅强化高毛利爆品引流，点线引导符确保多菜品快速扫视不串行。",
+      "coverThumb": "assets/thumbs/12.webp",
+      "coverFull": "assets/full/12.webp",
+      "aspectRatio": 1.4906,
+      "width": 1200,
+      "height": 805,
+      "palette": [
+        "#F6E2C8",
+        "#3C1D1F",
+        "#614036",
+        "#BDA38F"
+      ],
+      "sourceFiles": [
+        "12.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/12.webp",
+          "full": "assets/full/12.webp",
+          "aspectRatio": 1.4906,
+          "caption": "小杨烧烤 · 国潮黑金点菜单 B面（锡纸龙虾 / 凉菜热菜 / 酒水主食）"
+        }
+      ]
+    },
+    {
+      "id": "bbq-menu-light-a",
+      "title": "小杨烧烤 · 宣纸米金雅致点菜单（A面 · 烤肉蔬食篇）",
+      "subtitle": "Warm Parchment Editorial BBQ Menu Design · Side A (Grills & Veggies)",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "小杨烧烤 · 餐饮连锁门店",
+      "year": "2026",
+      "specs": "A3 横版双面覆膜菜单 / 暖米宣纸质感 + 书法题字与双区图文排版",
+      "tags": [
+        "餐饮菜单设计",
+        "折页与画册",
+        "主视觉 KV"
+      ],
+      "description": "提供给门店的浅色雅致版菜单方案（A面）。以温润米白宣纸肌理为基底，顶部融合苍劲毛笔书法店招、朱文印章与炭烤肉串/蒜蓉生蚝特写横幅；主体采用深褐圆角分类眉题与虚线对齐价目体系，右侧纵向陈列招牌烤串与清蒸生蚝实拍图，视觉清爽透气、耐脏易读。",
+      "coverThumb": "assets/thumbs/shaokao21.webp",
+      "coverFull": "assets/full/shaokao21.webp",
+      "aspectRatio": 1.4966,
+      "width": 1200,
+      "height": 802,
+      "palette": [
+        "#F6EEE4",
+        "#F1E7DB",
+        "#DCCDBF",
+        "#896950"
+      ],
+      "sourceFiles": [
+        "shaokao21.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/shaokao21.webp",
+          "full": "assets/full/shaokao21.webp",
+          "aspectRatio": 1.4966,
+          "caption": "小杨烧烤 · 宣纸米金点菜单 A面（烤肉类 & 蔬食类）"
+        }
+      ]
+    },
+    {
+      "id": "bbq-menu-light-b",
+      "title": "小杨烧烤 · 宣纸米金雅致点菜单（B面 · 龙虾热菜与酒水篇）",
+      "subtitle": "Warm Parchment Editorial BBQ Menu Design · Side B (Crayfish, Hot Dishes & Drinks)",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "小杨烧烤 · 餐饮连锁门店",
+      "year": "2026",
+      "specs": "A3 横版双面覆膜菜单 / 六大菜系模块化网格 + 印前 CMYK 300DPI 规范",
+      "tags": [
+        "餐饮菜单设计",
+        "折页与画册",
+        "主视觉 KV"
+      ],
+      "description": "浅色雅致版菜单背面（B面）完整呈现锡纸、龙虾、凉菜、热菜、酒水及主食六大板块。通过严谨的留白比例、字重层级与暖金细线框分割，将近百道菜品梳理得井然有序；底部提炼『新鲜食材 · 炭火现烤 · 美味实惠』线性图标背书，直接满足印刷厂 300DPI 覆膜裁切工艺。",
+      "coverThumb": "assets/thumbs/shaokao22.webp",
+      "coverFull": "assets/full/shaokao22.webp",
+      "aspectRatio": 1.4906,
+      "width": 1200,
+      "height": 805,
+      "palette": [
+        "#F9EEE3",
+        "#D4C2B4",
+        "#F3E5DA",
+        "#866453"
+      ],
+      "sourceFiles": [
+        "shaokao22.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/shaokao22.webp",
+          "full": "assets/full/shaokao22.webp",
+          "aspectRatio": 1.4906,
+          "caption": "小杨烧烤 · 宣纸米金点菜单 B面（锡纸龙虾 / 凉菜热菜 / 酒水主食）"
+        }
+      ]
+    },
+    {
       "id": "ecom-ipad-keyboard",
       "title": "平板磁吸妙控键盘 · 暖阳桌面数码场景视觉",
       "subtitle": "Tablet Magic Keyboard Warm Desk Lifestyle Visual",
