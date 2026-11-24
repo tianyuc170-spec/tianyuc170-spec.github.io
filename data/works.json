@@ -139,6 +139,45 @@
   ],
   "works": [
     {
+      "id": "ecom-provocativo-abyss-stand",
+      "title": "PROVOCATIVO CAVA · 起泡酒深渊镜发光陈列展架 3D 渲染",
+      "subtitle": "Provocativo Cava Brut · Abyss Mirror LED Display Stand 3D Render",
+      "category": "ecommerce",
+      "featured": true,
+      "layout": "standard",
+      "client": "PROVOCATIVO 西班牙起泡酒品牌",
+      "year": "2026",
+      "specs": "1:1 商业 3D 渲染 / 深渊镜无限反射灯效 + 亚光黑金属底座",
+      "tags": [
+        "产品精修合成",
+        "高点击主图",
+        "3D 渲染"
+      ],
+      "description": "为西班牙起泡酒品牌 PROVOCATIVO 打造的终端吧台发光陈列展架 3D 渲染提案。圆形背板结合『深渊镜』光学无限反射结构与暖金 LED 灯带，精准勾勒品牌面具徽标与环形字标；底部亚光黑金属灯箱与镂空发光字相呼应，在暗调吧台环境中凸显翡翠绿玻璃瓶身与鎏金酒标的奢华质感。",
+      "coverThumb": "assets/thumbs/provocativo-abyss-stand-v4.webp",
+      "coverFull": "assets/full/provocativo-abyss-stand-v4.webp",
+      "aspectRatio": 1.0,
+      "width": 1200,
+      "height": 1200,
+      "palette": [
+        "#30211B",
+        "#191110",
+        "#070606",
+        "#866C47"
+      ],
+      "sourceFiles": [
+        "provocativo-abyss-stand-v4.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/provocativo-abyss-stand-v4.webp",
+          "full": "assets/full/provocativo-abyss-stand-v4.webp",
+          "aspectRatio": 1.0,
+          "caption": "PROVOCATIVO CAVA · 深渊镜发光陈列展架 3D 渲染"
+        }
+      ]
+    },
+    {
       "id": "brand-corporate-vi-system",
       "title": "企业品牌全案 VI 视觉识别系统 · 3D 实景样机提案",
       "subtitle": "Corporate Brand Identity & VI System · 3D Stationery Mockup",
