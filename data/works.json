@@ -179,12 +179,12 @@
     },
     {
       "id": "poster-art-training-voucher",
-      "title": "艺树苑艺术培训 · 新中式青绿水墨烫金代金券（正背面）",
-      "subtitle": "Art Tree Studio · 680 RMB VIP Cash Voucher (Front & Back)",
+      "title": "艺术培训 · 新中式青绿水墨烫金代金券（正背面）",
+      "subtitle": "Art Studio · 680 RMB VIP Cash Voucher (Front & Back)",
       "category": "poster",
       "featured": true,
       "layout": "standard",
-      "client": "艺树苑艺术培训中心",
+      "client": "艺术培训中心",
       "year": "2026",
       "specs": "160 × 54 mm 双面印刷卡券 / 青绿水墨肌理 + 细金线框",
       "tags": [
@@ -212,7 +212,7 @@
           "thumb": "assets/thumbs/v1_final_both_sides.webp",
           "full": "assets/full/v1_final_both_sides.webp",
           "aspectRatio": 1.3545,
-          "caption": "艺树苑艺术培训 · 160×54mm 双面代金券正背面设计"
+          "caption": "艺术培训 · 160×54mm 双面代金券正背面设计"
         }
       ]
     },
