@@ -202,7 +202,19 @@
 
     if ($("#headerBrandName")) $("#headerBrandName").textContent = cfg.brandName || "TIANYUC DESIGN";
     if ($("#headerBrandSub")) $("#headerBrandSub").textContent = `${cfg.designerName || "陈天宇"} · 商业视觉设计`;
-    if ($("#heroTitleText")) $("#heroTitleText").textContent = cfg.heroTitle || "商业视觉与平面设计";
+    const titleEl = $("#heroTitleText");
+    if (titleEl) {
+      const rawTitle = cfg.heroTitle || "商业视觉全案\n平面设计 & 3D 渲染";
+      const lines = String(rawTitle).split(/\n+/).map((s) => s.trim()).filter(Boolean);
+      titleEl.innerHTML = lines
+        .map((line, idx) => {
+          const cls = idx === 0 ? "hero-title-line" : "hero-title-line is-sub";
+          const html = escapeHtml(line).replace(/&amp;/g, '<span class="hero-amp">&amp;</span>');
+          return `<span class="${cls}">${html}</span>`;
+        })
+        .join("");
+      delete titleEl.dataset.fxSplit;
+    }
     if ($("#heroSubtitleText")) $("#heroSubtitleText").textContent = cfg.heroSubtitle || "";
     if ($("#heroAvailability")) $("#heroAvailability").textContent = cfg.availability || "";
 
@@ -1192,7 +1204,15 @@
     const gsap = window.gsap;
 
     const heroTitleEl = $("#heroTitleText");
-    const heroChars = window.TYFX?.splitChars ? window.TYFX.splitChars(heroTitleEl) : [];
+    let heroChars = [];
+    if (heroTitleEl && window.TYFX?.splitChars) {
+      const lineEls = $$(".hero-title-line", heroTitleEl);
+      if (lineEls.length > 0) {
+        heroChars = lineEls.flatMap((lineEl) => window.TYFX.splitChars(lineEl));
+      } else {
+        heroChars = window.TYFX.splitChars(heroTitleEl);
+      }
+    }
     if (heroChars.length > 0) {
       gsap.from(heroChars, {
         yPercent: 110,

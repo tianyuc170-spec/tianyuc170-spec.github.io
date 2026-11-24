@@ -631,7 +631,8 @@
           .replace(/&/g, "&amp;")
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;");
-        return `<span class="char-mask" aria-hidden="true"><span class="char">${safe}</span></span>`;
+        const charCls = ch === "&" ? "char is-amp" : "char";
+        return `<span class="char-mask" aria-hidden="true"><span class="${charCls}">${safe}</span></span>`;
       })
       .join("");
     return Array.from(el.querySelectorAll(".char"));
