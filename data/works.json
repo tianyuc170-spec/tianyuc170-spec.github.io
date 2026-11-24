@@ -154,24 +154,24 @@
         "品牌 Logo"
       ],
       "description": "将几何菱形与金色环绕光轨标志系统化延展至企业全套办公与商务物料，涵盖特种黑卡/白卡名片、VI 视觉规范手册、信封信纸、手提袋、精装笔记本、员工工牌、陶瓷马克杯及帆布袋，在黑白石材阶梯光影中呈现高度统一的商业品牌质感。",
-      "coverThumb": "assets/thumbs/04_corporate_vi.webp",
-      "coverFull": "assets/full/04_corporate_vi.webp",
+      "coverThumb": "assets/thumbs/05_tianyuc_design_vi_v5.webp",
+      "coverFull": "assets/full/05_tianyuc_design_vi_v5.webp",
       "aspectRatio": 1.7917,
       "width": 1200,
       "height": 670,
       "palette": [
-        "#4F4841",
-        "#D4CDC4",
-        "#1E1C1A",
-        "#8A8178"
+        "#B2B5BF",
+        "#9FA5B0",
+        "#D2D3DA",
+        "#77808C"
       ],
       "sourceFiles": [
-        "04_corporate_vi.png"
+        "05_tianyuc_design_vi_v5.png"
       ],
       "gallery": [
         {
-          "thumb": "assets/thumbs/04_corporate_vi.webp",
-          "full": "assets/full/04_corporate_vi.webp",
+          "thumb": "assets/thumbs/05_tianyuc_design_vi_v5.webp",
+          "full": "assets/full/05_tianyuc_design_vi_v5.webp",
           "aspectRatio": 1.7917,
           "caption": "企业品牌全案 VI 系统 · 全套物料 3D 实景样机"
         }
