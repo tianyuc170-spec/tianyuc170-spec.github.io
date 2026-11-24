@@ -139,6 +139,84 @@
   ],
   "works": [
     {
+      "id": "interior-minimalist-living-3d",
+      "title": "现代极简侘寂客厅 · 洞石木饰面 3D 空间效果图",
+      "subtitle": "Modern Minimalist Living Room · 3D Architectural Visualization",
+      "category": "interior",
+      "featured": true,
+      "layout": "standard",
+      "client": "住宅空间 / 室内设计全案",
+      "year": "2026",
+      "specs": "16:9 写实 3D 空间渲染 / 天然洞石 + 胡桃木格栅 + 午后自然光影",
+      "tags": [
+        "3D 写实效果图",
+        "材质与灯光表现",
+        "空间布局规划"
+      ],
+      "description": "以天然米白洞石护墙板搭配深胡桃木竖向格栅与隐藏式洗墙灯带，营造克制而温润的现代极简客厅氛围；地面结合粗织亚麻地毯、模块化米白布艺沙发、烟熏玻璃圆几与焦糖色鞍革单人椅，精准还原午后斜阳穿透落地窗的全局光照与材质肌理。",
+      "coverThumb": "assets/thumbs/modern_minimalist_furniture_3d_bananapro.webp",
+      "coverFull": "assets/full/modern_minimalist_furniture_3d_bananapro.webp",
+      "aspectRatio": 1.7781,
+      "width": 1200,
+      "height": 675,
+      "palette": [
+        "#B7A18A",
+        "#957C64",
+        "#5D4734",
+        "#D9C9B6"
+      ],
+      "sourceFiles": [
+        "modern_minimalist_furniture_3d_bananapro.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/modern_minimalist_furniture_3d_bananapro.webp",
+          "full": "assets/full/modern_minimalist_furniture_3d_bananapro.webp",
+          "aspectRatio": 1.7781,
+          "caption": "现代极简侘寂客厅 · 洞石与木饰面 3D 空间渲染"
+        }
+      ]
+    },
+    {
+      "id": "poster-art-training-voucher",
+      "title": "艺树苑艺术培训 · 新中式青绿水墨烫金代金券（正背面）",
+      "subtitle": "Art Tree Studio · 680 RMB VIP Cash Voucher (Front & Back)",
+      "category": "poster",
+      "featured": true,
+      "layout": "standard",
+      "client": "艺树苑艺术培训中心",
+      "year": "2026",
+      "specs": "160 × 54 mm 双面印刷卡券 / 青绿水墨肌理 + 细金线框",
+      "tags": [
+        "营销海报",
+        "折页与画册",
+        "主视觉 KV"
+      ],
+      "description": "为艺术培训机构定制的高级感 VIP 体验代金券正背面排版规范。采用温润宣纸底纹搭配青绿水墨晕染与枯枝金箔点缀，正面以大字号墨绿『¥680』视觉锚点结合扫码预约区强化转化，背面清晰梳理四条核销使用说明，兼顾东方艺术气韵与 300DPI 印前裁切规范。",
+      "coverThumb": "assets/thumbs/v1_final_both_sides.webp",
+      "coverFull": "assets/full/v1_final_both_sides.webp",
+      "aspectRatio": 1.3545,
+      "width": 1200,
+      "height": 886,
+      "palette": [
+        "#FBF5ED",
+        "#F5F1EC",
+        "#EFEAE2",
+        "#B9C1B2"
+      ],
+      "sourceFiles": [
+        "v1_final_both_sides.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/v1_final_both_sides.webp",
+          "full": "assets/full/v1_final_both_sides.webp",
+          "aspectRatio": 1.3545,
+          "caption": "艺树苑艺术培训 · 160×54mm 双面代金券正背面设计"
+        }
+      ]
+    },
+    {
       "id": "bbq-menu-dark-a",
       "title": "小杨烧烤 · 国潮黑金餐饮点菜单（A面 · 烤肉蔬食篇）",
       "subtitle": "Chinese Neo-Classical BBQ Menu Design · Side A (Grills & Veggies)",
