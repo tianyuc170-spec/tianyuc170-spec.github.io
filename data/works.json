@@ -3,8 +3,8 @@
     "brandName": "TIANYUC DESIGN",
     "designerName": "陈天宇",
     "brandTagline": "摄影 · 品牌视觉 · 商业空间与电商全案设计",
-    "heroTitle": "商业视觉与平面设计",
-    "heroSubtitle": "提供品牌标志、活动海报、电商详情与室内文化墙设计",
+    "heroTitle": "商业视觉 · 平面设计与3D渲染",
+    "heroSubtitle": "作品涵盖平面设计与3D渲染，提供品牌标志、活动海报、电商详情与室内文化墙设计",
     "wechat": "z2728588294",
     "location": "中国 · 商业视觉与品牌设计工作室",
     "availability": "档期开放 · 承接品牌全案 / 电商视觉 / 商业平面与空间落地"
@@ -138,6 +138,123 @@
     }
   ],
   "works": [
+    {
+      "id": "brand-corporate-vi-system",
+      "title": "企业品牌全案 VI 视觉识别系统 · 3D 实景样机提案",
+      "subtitle": "Corporate Brand Identity & VI System · 3D Stationery Mockup",
+      "category": "brand",
+      "featured": true,
+      "layout": "standard",
+      "client": "企业品牌全案定制",
+      "year": "2026",
+      "specs": "16:9 3D 样机提案 / 名片 + VI 手册 + 办公物料 + 周边延展",
+      "tags": [
+        "VI 视觉手册",
+        "实景样机提案",
+        "品牌 Logo"
+      ],
+      "description": "将几何菱形与金色环绕光轨标志系统化延展至企业全套办公与商务物料，涵盖特种黑卡/白卡名片、VI 视觉规范手册、信封信纸、手提袋、精装笔记本、员工工牌、陶瓷马克杯及帆布袋，在黑白石材阶梯光影中呈现高度统一的商业品牌质感。",
+      "coverThumb": "assets/thumbs/04_corporate_vi.webp",
+      "coverFull": "assets/full/04_corporate_vi.webp",
+      "aspectRatio": 1.7917,
+      "width": 1200,
+      "height": 670,
+      "palette": [
+        "#4F4841",
+        "#D4CDC4",
+        "#1E1C1A",
+        "#8A8178"
+      ],
+      "sourceFiles": [
+        "04_corporate_vi.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/04_corporate_vi.webp",
+          "full": "assets/full/04_corporate_vi.webp",
+          "aspectRatio": 1.7917,
+          "caption": "企业品牌全案 VI 系统 · 全套物料 3D 实景样机"
+        }
+      ]
+    },
+    {
+      "id": "culture-party-building-3d",
+      "title": "「不忘初心 牢记使命」党建文化墙 · 3D 空间实景效果图",
+      "subtitle": "Party Building Cultural Wall · 3D Architectural Visualization",
+      "category": "culture",
+      "featured": true,
+      "layout": "standard",
+      "client": "政企单位 / 党建展厅空间",
+      "year": "2026",
+      "specs": "16:9 3D 空间渲染 / 流线双色造型 + 亚克力精密背发光字",
+      "tags": [
+        "企业形象墙",
+        "实景效果图",
+        "材质与工艺"
+      ],
+      "description": "采用流线型故宫红与深绛红双层波浪造型打造庄重而不失现代感的党建主视觉墙，主标题采用亚克力精密背发光立体字工艺；右侧衔接四联悬浮灯箱展板，融入祥云、麦穗与红飘带立体浮雕构件，兼具 3D 空间光影表现与 1:1 施工落地精度。",
+      "coverThumb": "assets/thumbs/01_party_building_culture_v2.webp",
+      "coverFull": "assets/full/01_party_building_culture_v2.webp",
+      "aspectRatio": 1.7917,
+      "width": 1200,
+      "height": 670,
+      "palette": [
+        "#B9A99E",
+        "#AE9B91",
+        "#7D3533",
+        "#C9B9AD"
+      ],
+      "sourceFiles": [
+        "01_party_building_culture_v2.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/01_party_building_culture_v2.webp",
+          "full": "assets/full/01_party_building_culture_v2.webp",
+          "aspectRatio": 1.7917,
+          "caption": "党建文化墙 · 亚克力背发光与四联灯箱 3D 效果图"
+        }
+      ]
+    },
+    {
+      "id": "culture-community-wall-3d",
+      "title": "「邻里和睦 共建美好家园」社区文化墙 · 3D 空间效果图",
+      "subtitle": "Community Cultural Wall · Warm Wood & Modular 3D Display",
+      "category": "culture",
+      "featured": true,
+      "layout": "standard",
+      "client": "社区党群服务中心 / 公共空间",
+      "year": "2026",
+      "specs": "16:9 3D 空间渲染 / 原木格栅 + 暖橙森绿异形立体模块",
+      "tags": [
+        "企业形象墙",
+        "展厅导视",
+        "实景效果图"
+      ],
+      "description": "围绕『文明新风、志愿同行、邻里互助、绿色生活』四大社区主题，打破传统平面展板形式，采用圆角半弧立体错落模块搭配原木格栅、暖阳洗墙灯与底部实木绿植花箱，营造亲和力十足的社区公共文化空间。",
+      "coverThumb": "assets/thumbs/03_community_culture_wall.webp",
+      "coverFull": "assets/full/03_community_culture_wall.webp",
+      "aspectRatio": 1.7917,
+      "width": 1200,
+      "height": 670,
+      "palette": [
+        "#A27C53",
+        "#C29E73",
+        "#E7C89B",
+        "#674724"
+      ],
+      "sourceFiles": [
+        "03_community_culture_wall.png"
+      ],
+      "gallery": [
+        {
+          "thumb": "assets/thumbs/03_community_culture_wall.webp",
+          "full": "assets/full/03_community_culture_wall.webp",
+          "aspectRatio": 1.7917,
+          "caption": "社区文化墙 · 原木格栅与异形立体模块 3D 效果图"
+        }
+      ]
+    },
     {
       "id": "interior-minimalist-living-3d",
       "title": "现代极简侘寂客厅 · 洞石木饰面 3D 空间效果图",
